@@ -1,5 +1,5 @@
-// import { ethers } from "ethers";
 import hre from "hardhat";
+
 async function main() {
   const currentTimestampInSeconds = Math.round(Date.now() / 1000);
   const ONE_YEARS_IN_SECONDS = 365 * 24 * 60 * 60;
@@ -19,6 +19,6 @@ async function main() {
 }
 
 main().catch((error) => {
-  console.error(error);
+  console.log(error);
   process.exitCode = 1;
 });
